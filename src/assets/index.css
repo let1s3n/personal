@@ -22,13 +22,29 @@ nav{
   border-radius:50%;
 }
 
-.standard-section{
+.main-section{
   height:100vh;
   background-color:#ffffff;
 }
 .cool{
-  
-  height:100vh;
   background:#f9f8ff;
   -webkit-mask: url(../assets/img/wave2.svg) no-repeat;
+}
+
+.section.presentation{
+  background-color: rgba(250, 250, 250, 0.3);
+  font-family: 'Fira Code', monospace;
+}
+
+#presentation-header{
+  text-align:center;
+  font-weight:600;
+}
+
+#presentation-body{
+  margin-top:50px;
+  text-align: center;
+  font-size:2em;
+  letter-spacing: 10px;
+  
 }
