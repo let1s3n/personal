@@ -26,23 +26,31 @@ nav{
 .cool{
   
   background:#f9f8ff;
-  margin-top:330px;
+  margin:300px 0px;
+  padding:30px 0px;
   position:relative;
 }
-.cool::before{
+.cool::before,.cool::after{
   content:"";
   height:300px;
   display: block;
   position: absolute;
   left:0px;
   right:0px;
-  bottom:100%;
+  
   background-color:#f9f8ff;
   background-size:100% !important;
-  -webkit-mask: url("./img/waveTop_mobile.svg") center -20px no-repeat;
+  
   -webkit-mask-size:100% !important;  
 }
-
+.cool::before{
+  -webkit-mask: url(./img/waveTop_mobile.svg) center -20px no-repeat;
+  bottom:100%;
+}
+.cool::after {
+  -webkit-mask: url(./img/waveBottom_mobile.svg) center -555px no-repeat;
+  top: 100%;
+}
 .section.presentation{
   background-color: rgba(250, 250, 250, 0.3);
   font-family: 'Fira Code', monospace;
@@ -77,8 +85,15 @@ nav{
 
 
 @media only screen and (min-width: 768px) {
+  .cool{
+    margin:330px 0px 164px;
+  }
   .cool::before{
     -webkit-mask:url(./img/wave2.svg) center top;
     height:330px;
+  }
+  .cool::after{
+    -webkit-mask:url(./img/wave.svg) center bottom;
+    height:164px;
   }
 }
