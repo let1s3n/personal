@@ -19,7 +19,7 @@ const Presentation = () => {
       else {
         document.getElementById('presentation-header').innerHTML += charac_header[i++];
       }
-    }, 500)
+    }, 200)
   }
 
   fillHeader(() => {
@@ -30,7 +30,7 @@ const Presentation = () => {
       else {
         document.getElementById('presentation-body').innerHTML += charac_body[j++];
       }
-    }, 200)
+    }, 100)
   });
 
 

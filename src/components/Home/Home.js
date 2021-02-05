@@ -1,28 +1,29 @@
 import React from 'react'
 import Presentation from './Presentation'
 import Draw from './Draw'
+import Tech from './Tech'
 
 
 class Home extends React.Component {
   render() {
     return (
-      <div className="section">
-        <div className="section main-section main">
+      <div className="section main-section">
+        <div className="section sec-section">
           <div className="container">
             <Presentation />
-            <Draw />
+            {/* <Draw /> */}
           </div>
         </div>
-        <div className="section main-section cool">
+        <div className="section sec-section cool">
       
-            <div className="section section-mask">
-              <h2>something</h2>
+            <div className="container">
+              <Tech/>
             </div>
          
 
         </div>
-        <div className="section main-section">
-          <h1>Other section</h1>
+        <div className="section sec-section">
+          <h1></h1>
         </div>
       </div>
     );
