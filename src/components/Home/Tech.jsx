@@ -6,8 +6,6 @@ import { AiOutlineConsoleSql } from "react-icons/ai";
 
 import { DiMongodb, DiJava } from "react-icons/di";
 
-import pyLogo from '../../assets/img/python-logo.png'
-
 
 
 const Tech = () => {

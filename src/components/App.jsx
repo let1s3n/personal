@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect } from 'react'
 
 import Home from './Home/Home'
 import Projects from './Projects/Projects'
@@ -13,7 +13,7 @@ import 'materialize-css/dist/css/materialize.min.css'
 import '../assets/index.css'
 
 const App = () => {
-  
+
 
   useEffect(() => {
     window.scrollTo(0, 0);

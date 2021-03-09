@@ -1,9 +1,7 @@
 import React from 'react'
 import Presentation from './Presentation'
-import Draw from './Draw'
 import Tech from './Tech'
 import Contacto from './Contacto'
-import VideoArea from './VideoArea'
 
 
 class Home extends React.Component {
