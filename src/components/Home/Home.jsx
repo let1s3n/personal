@@ -2,15 +2,18 @@ import React from 'react'
 import Presentation from './Presentation'
 import Draw from './Draw'
 import Tech from './Tech'
+import Contacto from './Contacto'
+import VideoArea from './VideoArea'
 
 
 class Home extends React.Component {
   render() {
     return (
       <div className="section main-section">
-        <div className="section sec-section">
-          <div className="container">
+        <div className="section sec-section full">
+          <div className="container center-align">
             <Presentation />
+            {/* <VideoArea /> */}
             {/* <Draw /> */}
           </div>
         </div>
@@ -22,8 +25,8 @@ class Home extends React.Component {
          
 
         </div>
-        <div className="section sec-section">
-          <h1></h1>
+        <div className="section sec-section full center-align">
+          <Contacto />
         </div>
       </div>
     );
