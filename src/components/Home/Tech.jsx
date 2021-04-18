@@ -1,5 +1,6 @@
-/* import { FaNodeJs } from "react-icons/fa"; */
-import React,{useEffect} from 'react'
+
+import React, { useEffect } from 'react';
+import { IconContext } from "react-icons";
 import { IoLogoHtml5, IoLogoJavascript, IoLogoNodejs, IoLogoCss3, IoGitMerge, IoLogoReact, IoLogoPython } from "react-icons/io5";
 
 import { AiOutlineConsoleSql } from "react-icons/ai";
@@ -20,34 +21,44 @@ const Tech = () => {
         element.setAttribute('class', elementClass + ' slide-top');
 
       }
-      console.log("Vertical: " + window.scrollY);
-      console.log("Horizontal: " + window.scrollX);
     }
   }, []);
   return (
-    <div id="slideTech" className="center-align" >
-      <h1>Technologies I Know</h1>
-      <div className="section tech-icons">
-        <div className="row">
-          <div className="col s4"><h3 id="html5-icon"><IoLogoHtml5 /></h3></div>
-          <div className="col s4"><h3 id="js-icon"><IoLogoJavascript /></h3></div>
-          <div className="col s4"><h3 id="node-icon"><IoLogoNodejs /></h3></div>
-        </div>
-        <div className="row">
-          <div className="col s4"><h3 id="css3-icon"><IoLogoCss3 /></h3></div>
-          <div className="col s4"><h3 id="git-icon"><IoGitMerge /></h3></div>
-          <div className="col s4"><h3 id="react-icon"><IoLogoReact /></h3></div>
-        </div>
-        <div className="row">
-          <div className="col s4"><h3 id="sql-icon"><AiOutlineConsoleSql /></h3></div>
-          <div className="col s4"><h3 id="mongodb-icon"><DiMongodb /></h3></div>
-          <div className="col s4"><h3 id="py-icon"><IoLogoPython /></h3></div>
-         {/*  <div className="col s4"><h3 id="py-icon"><img src={pyLogo} alt="pyLogo"/></h3></div> */}
-        </div>
-        <div className="row">
-          <div className="col s12"><h3 id="java-icon"><DiJava /></h3></div>
-        </div>
+    <div id="slideTech" className="h-100 border-bottom mb-3">
+      <h1 className="fs-1 margin-after-title text-center">Technologies I Know</h1>
+      <div className="container-fluid">
+        <IconContext.Provider value={{ size: "7em" }}>
+          <div className="row justify-content-between">
+
+            <div className="col-6 col-sm-4 text-center py-2 py-sm-3">
+
+              <IoLogoHtml5 id="html5-icon"/>
+
+
+            </div>
+            <div className="col-6 col-sm-4 text-center py-2 py-sm-3">
+              <IoLogoJavascript id="js-icon"/>
+            </div>
+            <div className="col-6 col-sm-4 text-center py-2 py-sm-3">
+              <IoLogoNodejs id="node-icon"/>
+            </div>
+
+            <div className="col-6 col-sm-4 text-center py-2 py-sm-3"><IoLogoCss3 id="css3-icon"/></div>
+            <div className="col-6 col-sm-4 text-center py-2 py-sm-3"><IoGitMerge id="git-icon"/></div>
+            <div className="col-6 col-sm-4 text-center py-2 py-sm-3"><IoLogoReact id="react-icon"/></div>
+       
+            <div className="col-6 col-sm-4 text-center py-2 py-sm-3"><AiOutlineConsoleSql id="sql-icon"/></div>
+            <div className="col-6 col-sm-4 text-center py-2 py-sm-3"><DiMongodb id="mongodb-icon"/></div>
+            <div className="col-6 col-sm-4 text-center py-2 py-sm-3"><IoLogoPython id="py-icon"/></div>
+  
+  
+            <div className="col-6 col-sm-4 text-center py-2 py-sm-3"><DiJava id="java-icon"/></div>
+          </div>
+        </IconContext.Provider>
+
+
       </div>
+
     </div>
   )
 }
