@@ -2,7 +2,6 @@ import React from 'react'
 import { Row, Col, Button } from 'react-bootstrap'
 import { IconContext } from "react-icons";
 import { CgCopyright } from "react-icons/cg";
-import { VscGithub } from "react-icons/vsc";
 import { SiGithub, SiLinkedin, SiTwitter, SiInstagram, SiGmail } from "react-icons/si";
 
 

@@ -11,7 +11,6 @@ const Presentation = () => {
     página`;
     
     const charac_body = [...str_body];
-    let i = 0;
     let j = 0;
     const body = setInterval(() => {
       if (j >= charac_body.length) {
